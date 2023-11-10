@@ -1,0 +1,31 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mian.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "release": "electron-builder --mac --arm64"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.4",
+    "electron-builder": "^24.6.4",
+    "electron-reloader": "^1.2.3"
+  },
+  "build": {
+    "productName": "My-electron-app",
+    "appId": "com.electron.app",
+    "directories": {
+        "output": "./dist"
+    }
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^2.0.0",
+    "@electron/remote": "^2.1.0",
+    "timer.js": "^1.0.4"
+  }
+}
